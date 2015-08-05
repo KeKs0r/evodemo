@@ -29,7 +29,8 @@
     "lint": "eslint -c .eslintrc src",
     "start-dev": "node ./node_modules/better-npm-run start-dev",
     "watch-client": "node ./node_modules/better-npm-run watch-client",
-    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\""
+    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\"",
+    "mobile": "export HOST=10.100.57.127 ;concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\""
   },
   "betterScripts": {
     "start": {
